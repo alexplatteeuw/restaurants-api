@@ -31,7 +31,7 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
 
   def destroy
     @restaurant.destroy
-    head :no_content
+    head :no_content # ou on pourrait render :show
   end
 
   private
